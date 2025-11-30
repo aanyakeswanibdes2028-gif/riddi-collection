@@ -1,0 +1,380 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Riddi Collection</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <style>
+      body {
+        margin: 0;
+        font-family: "Georgia", serif;
+        background-color: #f5efe6;
+        color: #000;
+      }
+
+      .header {
+        background-color: #fff;
+        padding: 15px 40px;
+       
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+      }
+
+      .logo {
+        display: flex;
+        align-items: center;
+        gap: 10px;
+        font-size: 20px;
+        color: #551414;
+        font-weight: bold;
+      }
+
+      .logo img {
+        width: 40px;
+        height: 40px;
+        border-radius: 50%;
+      }
+
+      .nav-links a {
+        color: #551414;
+        margin: 0 15px;
+        font-size: 16px;
+        text-decoration: none;
+        font-weight: bold;
+      }
+
+      .cart-icon {
+        font-size: 20px;
+        color: #551414;
+        text-decoration: none;
+      }
+
+      .banner {
+        height: 500px;
+        background-image: url("IMG_8383.jpg");
+        background-size: cover;
+        background-position: center;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+        text-decoration-color: #ddd;
+      }
+      .banner img {
+        height: 500px;
+      }
+
+      .banner h1 {
+        font-size: 48px;
+        margin: 0;
+        text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+      }
+
+      .banner p {
+        font-size: 18px;
+        margin-top: 10px;
+        text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+      }
+
+      .brand-strip {
+        background-color: #551414;
+        color: #fff;
+        padding: 10px 0;
+        text-align: center;
+      }
+
+      .brand-strip p {
+        margin: 0;
+        font-size: 14px;
+        letter-spacing: 2px;
+      }
+
+      .about {
+        background-color: #fff;
+        padding: 60px 20px;
+        text-align: center;
+      }
+
+      .about h2 {
+        font-size: 36px;
+        margin-bottom: 20px;
+        color: #551414;
+      }
+
+      .category-box a {
+        text-decoration: none;
+        color: #000;
+      }
+
+      .about p {
+        max-width: 800px;
+        margin: 0 auto;
+        line-height: 1.8;
+        font-size: 16px;
+        color: #333;
+      }
+
+      .categories {
+        padding: 60px 20px;
+        text-align: center;
+      }
+
+      .categories h2 {
+        font-size: 36px;
+        margin-bottom: 40px;
+        color: #551414;
+      }
+
+      .category-box {
+        background: #fff;
+        padding: 20px;
+        border-radius: 10px;
+       
+        text-align: center;
+        margin-bottom: 30px;
+      }
+
+      .category-box img {
+        width: 100%;
+        height: 300px;
+        object-fit: cover;
+        border-radius: 8px;
+        margin-bottom: 15px;
+      }
+
+      .category-box h3 {
+        font-size: 20px;
+        margin: 10px 0;
+        color: #000;
+      }
+
+      .features {
+        padding: 60px 20px;
+        background-color: #fff;
+      }
+
+      .feature {
+        text-align: center;
+        padding: 30px;
+      }
+
+      .feature img {
+        width: 80px;
+        height: 80px;
+        margin-bottom: 20px;
+      }
+
+      .feature h3 {
+        font-size: 18px;
+        margin-bottom: 10px;
+        color: #551414;
+        font-weight: bold;
+      }
+
+      .feature p {
+        font-size: 14px;
+        color: #555;
+        line-height: 1.6;
+      }
+
+      .footer {
+        background-color: #f5efe6;
+        padding: 40px 20px 20px;
+        border-top: 1px solid #ddd;
+      }
+
+      .footer h4 {
+        font-size: 16px;
+        margin-bottom: 15px;
+        font-weight: bold;
+        color: #000;
+      }
+
+      .footer ul {
+        list-style: none;
+        padding: 0;
+      }
+
+      .footer ul li {
+        margin-bottom: 8px;
+      }
+
+      .footer ul li a {
+        color: #555;
+        text-decoration: none;
+        font-size: 14px;
+      }
+
+      .footer ul li a:hover {
+        color: #551414;
+      }
+
+      .social-links {
+        display: flex;
+        gap: 15px;
+        justify-content: center;
+        margin-top: 20px;
+      }
+
+      .payment-methods {
+        display: flex;
+        gap: 10px;
+        justify-content: center;
+        margin-top: 20px;
+        flex-wrap: wrap;
+      }
+
+      .payment-methods img {
+        height: 25px;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="header">
+      <div class="nav-links">
+        <a href="index.html">Home</a>
+        <a>Product </a>
+      </div>
+      <div class="logo">
+       <a href="index.html"> <img src="Asset 1.png" alt="Logo" /></a>
+        riddi collection
+      </div>
+      <div>
+        <a href="Asset 3.png" class="cart-icon">🛒</a>
+      </div>
+    </div>
+
+    <div class="banner">
+      <img src="Screenshot 2025-11-28 162058.png" />
+      <div>
+        <h1>We create what<br />you believe in</h1>
+        <p>
+          slow-made clothing, crafted entirely by us, for women who value the
+          story behind the style.
+        </p>
+      </div>
+    </div>
+
+    <div class="brand-strip">
+      <p>
+        riddi collection riddi collection riddi collection riddi collection
+        riddi collection riddi collection riddi collection riddi collection
+        riddi collection riddi collection riddi collection riddi
+      </p>
+    </div>
+
+    <div class="about">
+      <h2>About Riddi Collection</h2>
+      <p>
+        Riddi Collection celebrates the beauty of Indian handblock prints by
+        pairing them with thoughtful Indo-western styles. With our own
+        manufacturing and artisan partnerships, each garment is stamped, dyed,
+        and finished by hand. From indigo to ajrakh, every print tells a story —
+        and we turn those stories into versatile tops, kurtis, and sets made for
+        the modern woman who values comfort, craft, and culture.
+      </p>
+    </div>
+
+    <div class="categories">
+      <h2>Shop Our Range</h2>
+      <div class="container">
+        <div class="row justify-content-center">
+          
+            <div class="col-md-4">
+              <div class="category-box">
+                <a href="short kurti.html">
+                <img src="IMG_8367.jpg" alt="Short Kurtis" />
+
+                <h3>Short Kurtis</h3>
+              </div>
+            </div>
+          </a>
+          <div class="col-md-4">
+            <div class="category-box">
+              <a href="tops.html">
+              <img src="IMG_8414.jpg" alt="Tops" />
+              <h3>Tops</h3>
+            </div>
+          </div>
+        </a>
+        </div>
+      </div>
+    </div>
+
+    <div class="features">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-4">
+            <div class="feature">
+              <img src="homegrown.png" alt="Homegrown" />
+              <h3>HOMEGROWN ROOTS</h3>
+              <p>Born in India,<br />crafted with intention.</p>
+            </div>
+          </div>
+          <div class="col-md-4">
+            <div class="feature">
+              <img src="tradition mordern.png" alt="Tradition" />
+              <h3>TRADITION MEETS MODERN</h3>
+              <p>Classic prints,<br />contemporary silhouettes.</p>
+            </div>
+          </div>
+          <div class="col-md-4">
+            <div class="feature">
+              <img src="in house.png" alt="Manufacture" />
+              <h3>IN HOUSE MANUFACTURE</h3>
+              <p>Made by us,<br />sewn to finish.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="footer">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-3">
+            <h4>COMPANY INFO</h4>
+            <ul>
+              <li><a href="#">About Us</a></li>
+              <li><a href="#">Contact</a></li>
+            </ul>
+          </div>
+          <div class="col-md-3">
+            <h4>CUSTOMER CARE</h4>
+            <ul>
+              <li><a href="#">Shipping</a></li>
+              <li><a href="#">Returns</a></li>
+            </ul>
+          </div>
+          <div class="col-md-3">
+            <h4>POLICIES</h4>
+            <ul>
+              <li><a href="#">Privacy Policy</a></li>
+              <li><a href="#">Terms & Conditions</a></li>
+            </ul>
+          </div>
+          <div class="col-md-3">
+            <h4>NEWSLETTER</h4>
+            <p style="font-size: 14px; color: #555">
+              Stay updated with our latest collections
+            </p>
+          </div>
+        </div>
+
+        <div class="social-links">
+          <a href="#">📘</a>
+          <a href="#">📷</a>
+          <a href="#">📌</a>
+          <a href="#">🍎</a>
+        </div>
+
+       
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+  </body>
+</html>

@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Product Detail - Riddi Collection</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <style>
+      body {
+        margin: 0;
+        font-family: "Georgia", serif;
+        background-color: #f5efe6;
+        color: #000;
+      }
+
+      .header {
+        background-color: #fff;
+        padding: 15px 40px;
+        box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+      }
+
+      .logo {
+        display: flex;
+        align-items: center;
+        gap: 10px;
+        font-size: 20px;
+        color: #000;
+      }
+
+      .logo img {
+        width: 40px;
+        height: 40px;
+        border-radius: 50%;
+      }
+
+      .nav-links a {
+        color: #000;
+        margin: 0 15px;
+        font-size: 16px;
+        text-decoration: none;
+      }
+
+      .cart-icon {
+        font-size: 20px;
+        color: #000;
+        text-decoration: none;
+      }
+
+      .product-page {
+        padding: 60px 20px;
+        max-width: 1000px;
+        margin: 0 auto;
+      }
+
+      .product-images {
+        display: flex;
+        gap: 20px;
+        margin-bottom: 30px;
+      }
+
+      .product-images img {
+        width: 48%;
+        height: 500px;
+        object-fit: cover;
+        border-radius: 10px;
+      }
+
+      .product-info {
+        background: #fff;
+        padding: 30px;
+        border-radius: 10px;
+      }
+
+      .product-info h1 {
+        font-size: 28px;
+        margin-bottom: 15px;
+        color: #000;
+      }
+
+      .price {
+        font-size: 24px;
+        font-weight: bold;
+        color: #551414;
+        margin-bottom: 15px;
+      }
+
+      .size {
+        font-size: 16px;
+        color: #555;
+        margin-bottom: 20px;
+      }
+
+      .add-to-cart {
+        background-color: #551414;
+        color: #fff;
+        padding: 15px 40px;
+        border: none;
+        border-radius: 5px;
+        font-size: 16px;
+        font-weight: bold;
+        cursor: pointer;
+        width: 100%;
+        margin-bottom: 20px;
+      }
+
+      .add-to-cart:hover {
+        background-color: #3d0e0e;
+      }
+
+      .description {
+        font-size: 15px;
+        line-height: 1.8;
+        color: #333;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="header">
+      <div class="nav-links">
+        <a href="index.html">Home</a>
+        <a>Product</a>
+      </div>
+      <div class="logo">
+        <a href="index.html"><img src="Asset 1.png" /></a>
+        riddi collection
+      </div>
+      <div>
+        <a href="emptycart.html" class="cart-icon">🛒</a>
+      </div>
+    </div>
+
+    <div class="product-page">
+      <div class="product-images">
+        <img src="IMG_8392.jpg" alt="Product Front" />
+        <img src="IMG_8402.jpg" alt="Product Back" />
+      </div>
+
+      <div class="product-info">
+        <h1>Indigo Handblock spaghetti strap back dori short kurti</h1>
+        <p class="price">₹1250</p>
+        <p class="size">Free Size</p>
+
+        <a href="shopping cacrt.html"
+          ><button class="add-to-cart">Add to Cart</button></a
+        >
+
+        <div class="description">
+          <p>
+            A spaghetti Kurti crafted for the friend who carries culture in her
+            art and gentleness in her presence. Theres a tie-up strap details at
+            the back!
+          </p>
+        </div>
+      </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+  </body>
+</html>
